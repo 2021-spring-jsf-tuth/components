@@ -17,7 +17,6 @@ export class PizzaToppingsComponent implements OnInit {
   //gets called when component is loaded and ready to display
   ngOnInit(): void {
     this.availablePizzaToppings = this.pizzaSvc.loadPizzaToppings();
-    console.log(this.availablePizzaToppings);
   }
 
 }
