@@ -9,13 +9,21 @@ import { PizzaToppingsService, PizzaToppingDisplay } from '../pizza-toppings.ser
 export class PizzaToppingsComponent implements OnInit {
 
   // Magic DI (dependency injection)...
-  constructor(private pizzaSvc: PizzaToppingsService) { }
+  //
+  // This uses TS automatic properties
+  constructor(
+    // This is the automatic property, because it has a scope specifier (the private)
+    // pizzaSvc is an automatic typeScript property
+    private pizzaSvc: PizzaToppingsService
+  ) {
+
+  }
 
   availablePizzaToppings: PizzaToppingDisplay[] = [];
 
-  // Angular "life cycle" function, that gets called when the component is
+  // Angular "life cycle" function (ngOnInit()), that gets called when the component is
   // loaded and ready to display.
-  ngOnInit(): void {  
+  ngOnInit(): void {
 
     this.availablePizzaToppings = this.pizzaSvc.loadPizzaToppings();
     console.log(this.availablePizzaToppings);
@@ -30,6 +38,6 @@ export class PizzaToppingsComponent implements OnInit {
         (acc, x) => acc + x.price
         , 0
       )
-    ; 
+      ;
   }
 }
