@@ -40,4 +40,16 @@ export class PizzaToppingsComponent implements OnInit {
       )
     ; 
   }
+
+  checkAll() {
+      this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({
+          ...x, checked: true
+      }))
+  }
+
+  uncheckAll() {
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({
+        ...x, checked: false
+    }))
+}
 }
