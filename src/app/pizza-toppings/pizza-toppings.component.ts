@@ -1,3 +1,4 @@
+import { ElementSchemaRegistry } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { PizzaToppingsService, PizzaToppingDisplay } from '../pizza-toppings.service';
 
@@ -31,5 +32,13 @@ export class PizzaToppingsComponent implements OnInit {
         , 0
       )
     ; 
+  }
+
+  checkAll() {
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x=> ({...x, checked: true}));
+  }
+
+  uncheckAll() {
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x=> ({...x, checked: false}));
   }
 }
