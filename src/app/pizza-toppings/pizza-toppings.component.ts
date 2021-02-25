@@ -8,8 +8,16 @@ import { PizzaToppingsService, PizzaToppingDisplay } from '../pizza-toppings.ser
 })
 export class PizzaToppingsComponent implements OnInit {
 
+    // private pizzaSvc: PizzaToppingsService; 
+
   // Magic DI (dependency injection)...
-  constructor(private pizzaSvc: PizzaToppingsService) { }
+  constructor(
+      // This is the automatic property, because it's private
+      private pizzaSvc: PizzaToppingsService
+    //   injectedPizzaSvc: PizzaToppingsService
+    ) { 
+        // this.pizzaSvc = injectedPizzaSvc; 
+    }
 
   availablePizzaToppings: PizzaToppingDisplay[] = [];
 
