@@ -11,11 +11,14 @@
                 [(ngModel)]="td.checked"
             >
             </mat-checkbox>
-            {{ td.name }} 
+            {{td.name}}       
+            
         </label>
-        
-    <input id="todo" [(ngModel)]="td.name" placeholder="name">
-    </p>    
+    </p>
+    <input type="text" class="form-control" placeholder="New To Do" [(ngModel)]="todo" />
+                <button  type="button" (click)="onClick()">Add To Do</button>  
+</mat-card-content>
+</mat-card>  
+      
 
-    </mat-card-content>
-</mat-card>
+   

@@ -10,10 +10,16 @@ export class LecTodoListComponent implements OnInit {
 
   constructor(private todoSvc: LecTodoListService) { }
 
-  todoList : LecTodoListDisplay[] = [];
+  todoList : LecTodoListDisplay[] = [];  
+  todo: string;
 
   ngOnInit(): void {
     this.todoList = this.todoSvc.loadTodos();
-  }
+  }  
 
+  onClick(){
+  	this.todoList.push({name: this.todo as string, checked: false});
+  	this.todo = '';
+  }
+ 
 }
