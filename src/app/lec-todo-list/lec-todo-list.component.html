@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>
+        To Do List
+    </mat-card-title>
+    <mat-card-content>
+        <p
+        *ngFor="let td of todoList"
+    >
+        <label>
+            <mat-checkbox
+                [(ngModel)]="td.checked"
+            >
+            </mat-checkbox>
+            {{ td.name }} 
+        </label>
+        
+    <input id="todo" [(ngModel)]="td.name" placeholder="name">
+    </p>    
+
+    </mat-card-content>
+</mat-card>
