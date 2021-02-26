@@ -24,6 +24,10 @@ export class PizzaToppingsService {
       , {
         name: "Olives"
         , price: 2.5
+      },
+      {
+        name: "Mushroom",
+        price: 3.15
       }
     ];
 
