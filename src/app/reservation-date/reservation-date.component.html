@@ -3,9 +3,21 @@
         Dinner Reservation Date
     </mat-card-title>
     <mat-card-content>
-        <input matInput type="date">
+        <input 
+            matInput 
+            type="date"
+            [(ngModel)]="selectedDate">
         <div class="button-row">
-            <button mat-raised-button color="accent">Confirm Reservation</button>
+            <button 
+                mat-raised-button 
+                color="accent"
+                (click)="confirmDate()"
+                >Confirm Reservation
+            </button>
         </div>
+        <br>
+        <mat-card>
+            Thank you! Dinner reservation confirmed for {{ selectedDate }}
+        </mat-card>
     </mat-card-content>
 </mat-card>
