@@ -12,9 +12,19 @@ export class ReservationDateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  selectedDate = "";
+  buttonWasClicked = false;
+  selectedDate = '';
 
   confirmDate = () => {
+    this.buttonWasClicked = true;
     return this.selectedDate;
+  };
+
+  handleDateChange = () => {
+    this.buttonWasClicked = false;
+  };
+
+  handleDateArrows = () => {
+    this.buttonWasClicked = false;
   };
 }
