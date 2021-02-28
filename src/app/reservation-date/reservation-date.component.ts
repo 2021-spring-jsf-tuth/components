@@ -12,4 +12,9 @@ export class ReservationDateComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  selectedDate = "";
+
+  confirmDate = () => {
+    return this.selectedDate;
+  };
 }
