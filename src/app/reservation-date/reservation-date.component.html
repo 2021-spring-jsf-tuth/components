@@ -3,12 +3,17 @@
         Dinner Reservation Date
     </mat-card-title>
     <mat-card-content>
-        <input 
-            matInput 
-            type="date"
-            [(ngModel)]="selectedDate"
-            (change)="handleDateChange()"
-            (input)="handleDateArrows()">
+        <mat-form-field color="accent" appearance="fill">
+            <mat-label>Pick a date</mat-label>
+            <input 
+                matInput 
+                [matDatepicker]="picker1"
+                [(ngModel)]="selectedDate"
+                (dateChange)="handleDateChange()"
+                (dateInput)="handleDateArrows()">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
         <div class="button-row">
             <button 
                 mat-raised-button 
@@ -19,7 +24,8 @@
         </div>
         <br>
         <p *ngIf="buttonWasClicked" id="message">
-            <span id="success">Thank you!</span> Dinner reservation confirmed for {{ selectedDate | date:'fullDate'}}
-        </p>           
+            <span id="success">Thank you!</span> Dinner reservation confirmed for {{ selectedDate | date:'fullDate' }}
+        </p>    
+        
     </mat-card-content>
 </mat-card>
