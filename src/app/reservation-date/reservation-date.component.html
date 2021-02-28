@@ -8,7 +8,7 @@
             type="date"
             [(ngModel)]="selectedDate"
             (change)="handleDateChange()"
-            (keydown.arrowDown)="handleDateArrows()">
+            (input)="handleDateArrows()">
         <div class="button-row">
             <button 
                 mat-raised-button 
@@ -18,8 +18,8 @@
             </button>
         </div>
         <br>
-        <p *ngIf="buttonWasClicked">
-            Thank you! Dinner reservation confirmed for {{ selectedDate | date:'fullDate'}}
+        <p *ngIf="buttonWasClicked" id="message">
+            <span id="success">Thank you!</span> Dinner reservation confirmed for {{ selectedDate | date:'fullDate'}}
         </p>           
     </mat-card-content>
 </mat-card>
