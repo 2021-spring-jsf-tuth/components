@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { KkhSnackbarComponent } from './kkh-snackbar/kkh-snackbar.component';
 
@@ -27,7 +28,8 @@ import { KkhSnackbarComponent } from './kkh-snackbar/kkh-snackbar.component';
     MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

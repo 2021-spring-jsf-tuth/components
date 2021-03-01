@@ -8,7 +8,13 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class KkhSnackbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _snackBar: MatSnackBar) {}
+
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action, {
+      duration: 500,
+    });
+  }
 
   ngOnInit(): void {
   }
