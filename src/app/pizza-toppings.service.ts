@@ -18,7 +18,8 @@ export class PizzaToppingsService {
     // faux toppings from a web service
     const pizzaToppingsFromWebService = [
       {name: "Pepperoni", price: 1.5},
-      {name: "Olives", price: 2.5}
+      {name: "Olives", price: 2.5},
+      {name: "Mushrooms", price: 3.15}
     ];
 
     return pizzaToppingsFromWebService.map(x => ({...x, checked: false}));
