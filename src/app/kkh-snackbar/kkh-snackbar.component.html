@@ -1,15 +1,25 @@
-<mat-form-field>
-  <!-- <mat-label>Message</mat-label> -->
-  <small><label>Message</label></small>
-  <input matInput placeholder="Pizza is delicious!" #message>
-</mat-form-field>
+<mat-card>
 
-<mat-form-field>
-  <!-- <mat-label>Action</mat-label> -->
-  <small><label>Action</label></small>
-  <input matInput placeholder="Yum" #action>
-</mat-form-field>
+  <mat-card-title>
+    Karly's Snack Bar
+  </mat-card-title>
 
-<br>
+  <mat-card-content>
+    <mat-form-field>
+      <!-- <mat-label>Message</mat-label> -->
+      <small><label>Message</label></small>
+      <input matInput placeholder="Pizza is delicious!" #message>
+    </mat-form-field>
 
-<button mat-raised-button color="primary" (click)="openSnackBar(message.value, action.value)">Show snack-bar</button>
+    <mat-form-field>
+      <!-- <mat-label>Action</mat-label> -->
+      <small><label>Action</label></small>
+      <input matInput placeholder="Yum" #action>
+    </mat-form-field>
+
+    <br>
+
+    <button mat-raised-button color="primary" (click)="openSnackBar(message.value, action.value)">Show snack-bar</button>
+  </mat-card-content>
+
+</mat-card>
