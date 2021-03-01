@@ -12,4 +12,9 @@ export class TjsSquaredComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sliderValue = 0;
+
+  get answer(): string {
+    return (this.sliderValue * this.sliderValue).toLocaleString();
+  }
 }
