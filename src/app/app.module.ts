@@ -23,7 +23,7 @@ import { MatSliderModule } from '@angular/material/slider';
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    ReservationDateComponent
+    ReservationDateComponent,
     TjsSquaredComponent
   ],
   imports: [
@@ -36,7 +36,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MatFormFieldModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatInputModule
+    MatInputModule,
     MatSliderModule
   ],
   providers: [],
