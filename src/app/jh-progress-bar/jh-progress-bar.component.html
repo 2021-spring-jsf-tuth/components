@@ -3,9 +3,7 @@
     Progress bar with <code>&lt;input type="number"&gt;</code>
   </mat-card-title>
   <mat-card-content>
-    <mat-form-field color="accent" appearance="fill">
-      <progress max="100" [value]="percent"></progress>
-      <input matInput type="number" min="0" max="100" [(ngModel)]="percent" />
-    </mat-form-field>
+    <progress max="100" [value]="percent"></progress>
+    <input matInput type="number" min="0" max="100" [(ngModel)]="percent" />
   </mat-card-content>
 </mat-card>
