@@ -1,2 +1,4 @@
 <progress max="100" [value]="percent"></progress>
 <input type="number" [(value)]="percent" min="0" max="100" step="1" />
+<!-- Somehow need to use NgModel since <input> does not follow the "Angular pattern" of values/changes https://angular.io/guide/built-in-directives#ngModel -- https://angular.io/guide/two-way-binding at the bottom -->
+<!-- Currently this component does not work. Also needs styles. -->
