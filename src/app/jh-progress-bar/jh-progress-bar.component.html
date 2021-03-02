@@ -1,4 +1,11 @@
-<progress max="100" [value]="percent"></progress>
-<input type="number" [(value)]="percent" min="0" max="100" step="1" />
-<!-- Somehow need to use NgModel since <input> does not follow the "Angular pattern" of values/changes https://angular.io/guide/built-in-directives#ngModel -- https://angular.io/guide/two-way-binding at the bottom -->
-<!-- Currently this component does not work. Also needs styles. -->
+<mat-card>
+  <mat-card-title>
+    Progress bar with <code>&lt;input type="number"&gt;</code>
+  </mat-card-title>
+  <mat-card-content>
+    <mat-form-field color="accent" appearance="fill">
+      <progress max="100" [value]="percent"></progress>
+      <input matInput type="number" min="0" max="100" [(ngModel)]="percent" />
+    </mat-form-field>
+  </mat-card-content>
+</mat-card>
