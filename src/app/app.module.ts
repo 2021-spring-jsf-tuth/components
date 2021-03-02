@@ -15,12 +15,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { TjsSquaredComponent } from './tjs-squared/tjs-squared.component';
+
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     ReservationDateComponent
+    TjsSquaredComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +37,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
