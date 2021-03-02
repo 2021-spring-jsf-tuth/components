@@ -15,6 +15,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { TjsRollD6Component } from './tjs-roll-d6/tjs-roll-d6.component';
 import { TjsSquaredComponent } from './tjs-squared/tjs-squared.component';
 
 import { MatSliderModule } from '@angular/material/slider';
@@ -24,6 +25,7 @@ import { MatSliderModule } from '@angular/material/slider';
     AppComponent,
     PizzaToppingsComponent,
     ReservationDateComponent,
+    TjsRollD6Component,
     TjsSquaredComponent
   ],
   imports: [
