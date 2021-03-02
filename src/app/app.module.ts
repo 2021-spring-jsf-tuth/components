@@ -14,12 +14,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { KkhSnackbarComponent } from './kkh-snackbar/kkh-snackbar.component';
+import { TjsSquaredComponent } from './tjs-squared/tjs-squared.component';
+
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    KkhSnackbarComponent
+    KkhSnackbarComponent,
+    TjsSquaredComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import { KkhSnackbarComponent } from './kkh-snackbar/kkh-snackbar.component';
     MatButtonModule,
     MatCheckboxModule,
     MatFormFieldModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
