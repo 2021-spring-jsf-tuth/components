@@ -21,7 +21,7 @@ export class PizzaToppingsComponent implements OnInit {
     console.log(this.availablePizzaToppings);
   }
 
-  //This is a TS getter property
+  //This is a TS getter property... Or Calculate Property
   get total() {
     return this.availablePizzaToppings
       .filter(x => x.checked)
