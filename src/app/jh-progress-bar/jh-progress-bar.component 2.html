@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-title>
+    Progress bar with <code>&lt;input type="number"&gt;</code>
+  </mat-card-title>
+  <mat-card-content>
+    <progress max="100" [value]="percent"></progress>
+    <input type="number" min="0" max="100" [(ngModel)]="percent" />
+  </mat-card-content>
+</mat-card>

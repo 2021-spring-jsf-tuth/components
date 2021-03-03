@@ -1,0 +1,25 @@
+<mat-card>
+
+  <mat-card-title>
+    Karly's Snack Bar
+  </mat-card-title>
+
+  <mat-card-content>
+    <mat-form-field>
+      <mat-label>Message</mat-label>
+      <!-- <small><label>Message</label></small> -->
+      <input matInput value="Pizza is delicious!" #message>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Action</mat-label>
+      <!-- <small><label>Action</label></small> -->
+      <input matInput value="Yum" #action>
+    </mat-form-field>
+
+    <br>
+
+    <button mat-raised-button color="primary" (click)="openSnackBar(message.value, action.value)">Show snack-bar</button>
+  </mat-card-content>
+
+</mat-card>
