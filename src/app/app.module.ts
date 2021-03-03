@@ -14,6 +14,7 @@ import { TjsSquaredComponent } from './tjs-squared/tjs-squared.component';
 
 import { MatSliderModule } from '@angular/material/slider';
 import { LalAdditionComponent } from './lal-addition/lal-addition.component';
+import { MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LalAdditionComponent } from './lal-addition/lal-addition.component';
     MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatSliderModule
+    MatSliderModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
