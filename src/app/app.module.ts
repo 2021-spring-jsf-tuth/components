@@ -13,12 +13,14 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TjsSquaredComponent } from './tjs-squared/tjs-squared.component';
 
 import { MatSliderModule } from '@angular/material/slider';
+import { LalAdditionComponent } from './lal-addition/lal-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    TjsSquaredComponent
+    TjsSquaredComponent,
+    LalAdditionComponent
   ],
   imports: [
     BrowserModule,
