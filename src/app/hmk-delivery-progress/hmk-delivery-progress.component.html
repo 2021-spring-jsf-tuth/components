@@ -1,0 +1,23 @@
+<mat-card>
+
+    <mat-card-title>
+        Delivery Progress
+</mat-card-title>
+<div>
+    <button
+    mat-mini-fab
+    color="warn"
+    (click)="startDeliveryProgressSpinner()"
+>
+    Click here to see your delivery progress
+</button>
+<mat-progress-spinner
+    [color]="color"
+    [mode]="mode"
+     [value]="25">
+>
+
+</mat-progress-spinner>
+
+</div>
+</mat-card>
