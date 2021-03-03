@@ -6,11 +6,15 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
   styleUrls: ['./hmk-delivery-progress.component.css']
 })
 export class HmkDeliveryProgressComponent implements OnInit {
+  value: number;
 
   constructor(private _deliveryProgress: MatProgressSpinnerModule) { }
 
   startDeliveryProgressSpinner(){
-    this._deliveryProgress.open();
+    //set the value the spinner will start at for determinate spinner, bind the data?
+    this.value = 20;
+    //now to start the spinner???
+    //this._deliveryProgress.open();
   }
 
   ngOnInit(): void {

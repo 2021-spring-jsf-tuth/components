@@ -11,10 +11,11 @@
 >
     Click here to see your delivery progress
 </button>
+//not sure where to put this if i want it to start at the click
 <mat-progress-spinner
     [color]="color"
     [mode]="mode"
-     [value]="25">
+    [(ngModel)]="value"
 >
 
 </mat-progress-spinner>
