@@ -6,23 +6,32 @@
 
     <mat-card-content>
 
-        <button
+        <div>
+            <button
             mat-fab
             color="accent"
             (click)="selectCat('rigby')"
-        >
-            Rigby
-        </button>
+            >
+                Rigby
+            </button>
 
-        &nbsp; &nbsp;
+            &nbsp; &nbsp;
 
-        <button
-            mat-fab
-            color="accent"
-            (click)="selectCat('tank')"
+            <button
+                mat-fab
+                color="accent"
+                (click)="selectCat('tank')"
+            >
+                Tank
+            </button>
+        </div>
+
+
+        <img
+            src=""
+            id="catImage"
         >
-            Tank
-        </button>
+
 
     </mat-card-content>
 
