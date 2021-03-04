@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LalAdditionComponent implements OnInit {
 
+    numberOne = 75;
+    numberTwo = 10;
+    answer = 85;
+    addNumbers = () => {
+        this.answer = this.numberOne + this.numberTwo;
+    }
+
   constructor() { }
 
   ngOnInit(): void {
