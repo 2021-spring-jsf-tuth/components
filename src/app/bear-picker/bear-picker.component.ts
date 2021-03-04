@@ -19,4 +19,8 @@ export class BearPickerComponent implements OnInit {
     console.log(this.availableBears);
   }
 
+  pickBear() {
+    console.log("BEARS");
+  }
+
 }

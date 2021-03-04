@@ -14,7 +14,6 @@ export class BearPickerService {
 
   loadBears(): BearPickerDisplay[] {
 
-    // Faux toppings from a web service.
     const bearsFromWebService = [
       {
         name: "Brown"

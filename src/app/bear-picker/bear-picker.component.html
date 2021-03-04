@@ -1,1 +1,30 @@
-<p>bear-picker works!</p>
+<mat-card>
+    <mat-card-title>
+        Lisa's Bear Picker (if you don't watch the office, this probably seems crazy...)
+    </mat-card-title>
+
+    <mat-card-content>
+        <p
+            *ngFor="let b of availableBears"
+        >
+            <label>
+                <mat-checkbox
+                [(ngModel)]="b.checked"
+                >
+                </mat-checkbox>
+                {{ b.name }}
+            </label>
+        </p>
+
+        <button
+            (click)="pickBear()"
+            mat-flat-button
+            color="primary"
+        >
+            Pick Bear
+        </button>
+
+        <h2>
+            
+        </h2>
+    </mat-card-content>
