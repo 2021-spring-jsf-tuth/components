@@ -8,6 +8,7 @@ import { JhProgressBarComponent } from './jh-progress-bar/jh-progress-bar.compon
 import { BearPickerComponent } from './bear-picker/bear-picker.component';
 
 
+
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -17,6 +18,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TjsD20RollerComponent } from './tjs-d20-roller/tjs-d20-roller.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSlideToggleModule} from '@angular/material/slide-toggle'
 
 import { KkhSnackbarComponent } from './kkh-snackbar/kkh-snackbar.component';
 import { MatInputModule } from '@angular/material/input';
@@ -24,6 +26,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { TjsRollD6Component } from './tjs-roll-d6/tjs-roll-d6.component';
 import { TjsSquaredComponent } from './tjs-squared/tjs-squared.component';
+import { MdmSlideToggleComponent } from './mdm-slide-toggle/mdm-slide-toggle.component';
 import { JtsRiggedD20Component } from './jts-rigged-d20/jts-rigged-d20.component';
 
 import { MatSliderModule } from '@angular/material/slider';
@@ -37,9 +40,7 @@ import { MatRippleModule } from '@angular/material/core';
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-
     TjsSquaredComponent,
-    LalAdditionComponent,
     TjsD20RollerComponent,
     KkhSnackbarComponent,
     TjsSquaredComponent,
@@ -47,8 +48,11 @@ import { MatRippleModule } from '@angular/material/core';
     TjsRollD6Component,
     TjsSquaredComponent,
     JhProgressBarComponent,
+    MdmSlideToggleComponent,
+    JhProgressBarComponent,
     JtsRiggedD20Component,
-    BearPickerComponent
+    BearPickerComponent,
+    LalAdditionComponent
 
 
   ],
@@ -59,7 +63,6 @@ import { MatRippleModule } from '@angular/material/core';
     MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
-
     MatSliderModule,
     MatInputModule,
     MatRadioModule,
@@ -68,8 +71,8 @@ import { MatRippleModule } from '@angular/material/core';
     MatSnackBarModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSliderModule
-
+    MatSliderModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
