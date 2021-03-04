@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { TjsD20RollerComponent } from './tjs-d20-roller/tjs-d20-roller.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
@@ -28,6 +29,7 @@ import { MatSliderModule } from '@angular/material/slider';
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    TjsD20RollerComponent,
     KkhSnackbarComponent,
     TjsSquaredComponent,
     ReservationDateComponent,
