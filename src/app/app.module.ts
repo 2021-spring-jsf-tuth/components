@@ -6,6 +6,7 @@ import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.componen
 import { ReservationDateComponent } from './reservation-date/reservation-date.component';
 import { JhProgressBarComponent } from './jh-progress-bar/jh-progress-bar.component';
 
+
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -14,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSlideToggleModule} from '@angular/material/slide-toggle'
 
 import { KkhSnackbarComponent } from './kkh-snackbar/kkh-snackbar.component';
 import { MatInputModule } from '@angular/material/input';
@@ -21,8 +23,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { TjsRollD6Component } from './tjs-roll-d6/tjs-roll-d6.component';
 import { TjsSquaredComponent } from './tjs-squared/tjs-squared.component';
+import { MdmSlideToggleComponent } from './mdm-slide-toggle/mdm-slide-toggle.component';
 
-import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { MatSliderModule } from '@angular/material/slider';
     ReservationDateComponent,
     TjsRollD6Component,
     TjsSquaredComponent,
-    JhProgressBarComponent
+    JhProgressBarComponent, 
+    MdmSlideToggleComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule,
-    MatSliderModule
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
