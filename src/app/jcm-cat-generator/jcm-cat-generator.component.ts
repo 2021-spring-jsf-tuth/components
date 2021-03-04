@@ -9,6 +9,23 @@ export class JcmCatGeneratorComponent implements OnInit {
 
   constructor() { }
 
+  cats = [
+      {
+        name: "rigby", 
+        imgSrc: "cat-pics/rigby.png"
+      },
+      {
+          name: "tank", 
+          imgSrc: "cat-pics/tank.png"
+      }
+  ]
+
+  currentCat = ""; 
+
+  selectCat(catName : string) {
+    console.log(catName); 
+  }
+
   ngOnInit(): void {
   }
 
