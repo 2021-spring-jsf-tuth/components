@@ -1,7 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
+<<<<<<< Updated upstream
     "analytics": "dfe33739-46bd-4a8f-a0ef-d8cbab4cb7fb"
+=======
+    "analytics": "92773f14-120d-40bb-9238-6e51747111dc"
+>>>>>>> Stashed changes
   },
   "version": 1,
   "newProjectRoot": "projects",
