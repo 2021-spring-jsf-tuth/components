@@ -28,7 +28,6 @@ import { JtsRiggedD20Component } from './jts-rigged-d20/jts-rigged-d20.component
 
 import { MatSliderModule } from '@angular/material/slider';
 import { LalAdditionComponent } from './lal-addition/lal-addition.component';
-import { MatInputModule} from '@angular/material/input';
 
 import { MatRadioModule } from '@angular/material/radio';
 import { MatRippleModule } from '@angular/material/core';
@@ -40,8 +39,7 @@ import { MatRippleModule } from '@angular/material/core';
     PizzaToppingsComponent,
 
     TjsSquaredComponent,
-    LalAdditionComponent
-
+    LalAdditionComponent,
     TjsD20RollerComponent,
     KkhSnackbarComponent,
     TjsSquaredComponent,
@@ -63,15 +61,13 @@ import { MatRippleModule } from '@angular/material/core';
     MatCheckboxModule,
 
     MatSliderModule,
-    MatInputModule
-
+    MatInputModule,
     MatRadioModule,
     MatRippleModule,
     MatFormFieldModule,
     MatSnackBarModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatInputModule,
     MatSliderModule
 
   ],
