@@ -30,10 +30,10 @@ export class PizzaToppingsService {
         , price: 3.15
       }
     ];
-
     return pizzaToppingsFromWebService.map(x => ({
       ...x
       , checked: false
     }));
   }
+
 }
