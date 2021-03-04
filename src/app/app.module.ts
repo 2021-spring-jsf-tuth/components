@@ -21,6 +21,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { TjsRollD6Component } from './tjs-roll-d6/tjs-roll-d6.component';
 import { TjsSquaredComponent } from './tjs-squared/tjs-squared.component';
+import { JtsRiggedD20Component } from './jts-rigged-d20/jts-rigged-d20.component';
 
 import { MatSliderModule } from '@angular/material/slider';
 
@@ -33,7 +34,8 @@ import { MatSliderModule } from '@angular/material/slider';
     ReservationDateComponent,
     TjsRollD6Component,
     TjsSquaredComponent,
-    JhProgressBarComponent
+    JhProgressBarComponent,
+    JtsRiggedD20Component
   ],
   imports: [
     BrowserModule,
