@@ -20,10 +20,9 @@ export class PizzaToppingsComponent implements OnInit {
     this.availablePizzaToppings = this.pizzaSvc.loadPizzaToppings();
     console.log(this.availablePizzaToppings);
   }
-  total =0;
-  
-  calculateTotal() {
-    this.total = this.availablePizzaToppings
+  //This is a TS "getter" property or calculated property
+  get total() {
+    return this.availablePizzaToppings
       .filter(x => x.checked)
       .reduce(
         (acc, x) => acc + x.price
