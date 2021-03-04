@@ -12,15 +12,16 @@ export class BearPickerComponent implements OnInit {
   constructor(private bearSvc: BearPickerService) { }
 
   availableBears: BearPickerDisplay[] = [];
+  selectedBear: string = null;
+  showAngryDwight: boolean = null;
 
   ngOnInit(): void {
 
     this.availableBears = this.bearSvc.loadBears();
-    console.log(this.availableBears);
   }
 
   pickBear() {
-    console.log("BEARS");
+    this.showAngryDwight = (this.selectedBear !== "Black");
   }
 
 }
