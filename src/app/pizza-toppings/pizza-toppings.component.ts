@@ -20,23 +20,15 @@ export class PizzaToppingsComponent implements OnInit {
     this.availablePizzaToppings = this.pizzaSvc.loadPizzaToppings();
     console.log(this.availablePizzaToppings);
   }
-
-  // This is a TS "getter" properties... Or "calculated" property...
-  get total() {
-    return this.availablePizzaToppings
+  total =0;
+  
+  calculateTotal() {
+    this.total = this.availablePizzaToppings
       .filter(x => x.checked)
       .reduce(
         (acc, x) => acc + x.price
         , 0
       )
     ; 
-  }
-
-  checkAll() {
-    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({...x, checked: true }));
-  }
-
-  uncheckAll() {
-    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({...x, checked: false }));
   }
 }
