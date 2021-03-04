@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -21,6 +21,11 @@ import { MatIconModule } from '@angular/material/icon';
     PizzaToppingsComponent,
     CvChipsComponent
   ],
+  
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ], 
+
   imports: [
     BrowserModule,
     FormsModule,
