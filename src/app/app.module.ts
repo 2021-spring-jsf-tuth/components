@@ -23,6 +23,7 @@ import { TjsRollD6Component } from './tjs-roll-d6/tjs-roll-d6.component';
 import { TjsSquaredComponent } from './tjs-squared/tjs-squared.component';
 
 import { MatSliderModule } from '@angular/material/slider';
+import { JcwBestGuitarComponent } from './jcw-best-guitar/jcw-best-guitar.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MatSliderModule } from '@angular/material/slider';
     ReservationDateComponent,
     TjsRollD6Component,
     TjsSquaredComponent,
-    JhProgressBarComponent
+    JhProgressBarComponent,
+    JcwBestGuitarComponent
   ],
   imports: [
     BrowserModule,
