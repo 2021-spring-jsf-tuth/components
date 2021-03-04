@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCard, MatCardModule } from '@angular/material/card'; 
 import { MatButtonModule } from '@angular/material/button'; 
-import { MatCheckboxModule } from '@angular/material/checkbox'; 
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { CvChipsComponent } from './cv-chips/cv-chips.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    CvChipsComponent
   ],
   imports: [
     BrowserModule,
