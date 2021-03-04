@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCard, MatCardModule } from '@angular/material/card'; 
 import { MatButtonModule } from '@angular/material/button'; 
-import { MatCheckboxModule } from '@angular/material/checkbox'; 
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { JcmCatGeneratorComponent } from './jcm-cat-generator/jcm-cat-generator.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    JcmCatGeneratorComponent
   ],
   imports: [
     BrowserModule,
