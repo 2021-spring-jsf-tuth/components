@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 import { ReservationDateComponent } from './reservation-date/reservation-date.component';
 import { JhProgressBarComponent } from './jh-progress-bar/jh-progress-bar.component';
+import { BearPickerComponent } from './bear-picker/bear-picker.component';
+
 
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,6 +27,10 @@ import { TjsSquaredComponent } from './tjs-squared/tjs-squared.component';
 
 import { MatSliderModule } from '@angular/material/slider';
 
+import { MatRadioModule } from '@angular/material/radio';
+import { MatRippleModule } from '@angular/material/core';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +41,9 @@ import { MatSliderModule } from '@angular/material/slider';
     ReservationDateComponent,
     TjsRollD6Component,
     TjsSquaredComponent,
-    JhProgressBarComponent
+    JhProgressBarComponent,
+    BearPickerComponent
+
   ],
   imports: [
     BrowserModule,
@@ -44,6 +52,8 @@ import { MatSliderModule } from '@angular/material/slider';
     MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatRadioModule,
+    MatRippleModule,
     MatFormFieldModule,
     MatSnackBarModule,
     MatDatepickerModule,
