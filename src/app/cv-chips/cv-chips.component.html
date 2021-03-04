@@ -1,3 +1,24 @@
+<h1>
+    Crystal's Chip Usage 
+</h1>
 
+ <mat-form-field class="addPadding">
+     
+    <mat-label><strong>What's Your Favorite Animal?</strong></mat-label>
+    <mat-chip-list #chipList aria-label="Animal selection">
+        <mat-chip color="warn" selected *ngFor="let animal of animals" [selectable]="selectable"
+         [removable]="removable" (removed)="remove(animal)">
+            {{animal.name}}
+        <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+        </mat-chip>
+
+    <input placeholder="Type In New Animal..."
+             [matChipInputFor]="chipList"
+             [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+             [matChipInputAddOnBlur]="addOnBlur"
+             (matChipInputTokenEnd)="add($event)">
+
+    </mat-chip-list>
+  </mat-form-field>
 
 
