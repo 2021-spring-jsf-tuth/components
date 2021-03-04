@@ -35,7 +35,7 @@ import { HmkDeliveryProgressComponent } from './hmk-delivery-progress.component'
     TjsRollD6Component,
     TjsSquaredComponent,
     JhProgressBarComponent,
-    HmkDeliveryProgressComponent
+    HmkDeliveryProgressComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +49,7 @@ import { HmkDeliveryProgressComponent } from './hmk-delivery-progress.component'
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule,
-    MatSliderModule
+    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
