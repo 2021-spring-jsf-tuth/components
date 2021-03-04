@@ -29,6 +29,8 @@ import { TjsSquaredComponent } from './tjs-squared/tjs-squared.component';
 import { MdmSlideToggleComponent } from './mdm-slide-toggle/mdm-slide-toggle.component';
 import { JtsRiggedD20Component } from './jts-rigged-d20/jts-rigged-d20.component';
 
+import { MatSliderModule } from '@angular/material/slider';
+import { LalAdditionComponent } from './lal-addition/lal-addition.component';
 
 import { MatRadioModule } from '@angular/material/radio';
 import { MatRippleModule } from '@angular/material/core';
@@ -38,17 +40,20 @@ import { MatRippleModule } from '@angular/material/core';
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    TjsSquaredComponent,
     TjsD20RollerComponent,
     KkhSnackbarComponent,
     TjsSquaredComponent,
     ReservationDateComponent,
     TjsRollD6Component,
     TjsSquaredComponent,
-    JhProgressBarComponent, 
+    JhProgressBarComponent,
     MdmSlideToggleComponent,
     JhProgressBarComponent,
     JtsRiggedD20Component,
-    BearPickerComponent
+    BearPickerComponent,
+    LalAdditionComponent
+
 
   ],
   imports: [
@@ -58,13 +63,15 @@ import { MatRippleModule } from '@angular/material/core';
     MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatSliderModule,
+    MatInputModule,
     MatRadioModule,
     MatRippleModule,
     MatFormFieldModule,
     MatSnackBarModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatInputModule,
+    MatSliderModule,
     MatSlideToggleModule
   ],
   providers: [],
