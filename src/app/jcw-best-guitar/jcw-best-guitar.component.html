@@ -1,1 +1,14 @@
-<p>jcw-best-guitar works!</p>
+<mat-card>
+    <mat-card-title>
+        Joe's Favorite guitar
+    </mat-card-title>
+    <mat-card-content>
+        <button
+        mat-raised-button 
+        mat-raised-button color=warn
+            (click)="findOutJoesFavoriteGuitar()"
+        >
+            {{ value }}
+        </button>
+    </mat-card-content>
+</mat-card>

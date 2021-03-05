@@ -12,4 +12,9 @@ export class JcwBestGuitarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  value = "Favorite Guitar";
+
+  findOutJoesFavoriteGuitar() {
+    this.value = "Fender Stratocastor";
+  }
 }
