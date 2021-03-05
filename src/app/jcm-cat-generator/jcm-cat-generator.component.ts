@@ -12,23 +12,23 @@ export class JcmCatGeneratorComponent implements OnInit {
     cats = [
         {
             name: "rigby", 
-            imgSrc: "cat-pics/rigby.png", 
+            imgSrc: "./assets/cat-pics/rigby.png", 
         },
         {
             name: "tank", 
-            imgSrc: "cat-pics/tank.png", 
+            imgSrc: "./assets/cat-pics/tank.png", 
         }
     ]; 
 
   currentCat = {}; 
 
   selectCat(catName : string) {
-    this.currentCat = catName; 
+
+    this.currentCat = this.cats.filter(current => current.name == catName);
+
     let img = document.querySelector("#catImage"); 
     img.setAttribute("width", "250px");
-    img.setAttribute("src", "./assets/cat-pics/rigby.png");
-    console.log();
-
+    img.setAttribute("src", this.currentCat[0].imgSrc);
     
   }
 
