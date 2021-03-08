@@ -28,8 +28,7 @@ export class PizzaToppingsComponent implements OnInit {
     this.availablePizzaToppings = this.pizzaSvc.loadPizzaToppings();
     console.log(this.availablePizzaToppings);
   }
-
-
+  // This is a TS "getter" properties... Or "calculated" property...
 
   get total() {
     return this.availablePizzaToppings
@@ -42,14 +41,12 @@ export class PizzaToppingsComponent implements OnInit {
   }
 
   checkAll() {
-      this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({
-          ...x, checked: true
-      }))
+
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({...x, checked: true }));
   }
 
   uncheckAll() {
-    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({
-        ...x, checked: false
-    }))
-}
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({...x, checked: false }));
+  }
+
 }
