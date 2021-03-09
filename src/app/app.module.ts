@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card'; 
 import { MatButtonModule } from '@angular/material/button'; 
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { LecTodoListComponent } from './lec-todo-list/lec-todo-list.component';
 import { MatChipsModule } from '@angular/material/chips'; 
 import { MatIconModule } from '@angular/material/icon';
 import { TjsD20RollerComponent } from './tjs-d20-roller/tjs-d20-roller.component';
@@ -38,13 +39,13 @@ import { LalAdditionComponent } from './lal-addition/lal-addition.component';
 
 import { MatRadioModule } from '@angular/material/radio';
 import { MatRippleModule } from '@angular/material/core';
-
 import { JcmCatGeneratorComponent } from './jcm-cat-generator/jcm-cat-generator.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    LecTodoListComponent,
     CvChipsComponent,
     TjsSquaredComponent,
     TjsD20RollerComponent,
