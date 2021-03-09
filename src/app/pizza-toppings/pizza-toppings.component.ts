@@ -8,8 +8,16 @@ import { PizzaToppingsService, PizzaToppingDisplay } from '../pizza-toppings.ser
 })
 export class PizzaToppingsComponent implements OnInit {
 
+    // private pizzaSvc: PizzaToppingsService; 
+
   // Magic DI (dependency injection)...
-  constructor(private pizzaSvc: PizzaToppingsService) { }
+  constructor(
+      // This is the automatic property, because it's private
+      private pizzaSvc: PizzaToppingsService
+    //   injectedPizzaSvc: PizzaToppingsService
+    ) { 
+        // this.pizzaSvc = injectedPizzaSvc; 
+    }
 
   availablePizzaToppings: PizzaToppingDisplay[] = [];
 
@@ -20,8 +28,8 @@ export class PizzaToppingsComponent implements OnInit {
     this.availablePizzaToppings = this.pizzaSvc.loadPizzaToppings();
     console.log(this.availablePizzaToppings);
   }
-
   // This is a TS "getter" properties... Or "calculated" property...
+
   get total() {
     return this.availablePizzaToppings
       .filter(x => x.checked)
@@ -33,10 +41,12 @@ export class PizzaToppingsComponent implements OnInit {
   }
 
   checkAll() {
+
     this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({...x, checked: true }));
   }
 
   uncheckAll() {
     this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({...x, checked: false }));
   }
+
 }

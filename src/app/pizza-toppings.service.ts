@@ -24,10 +24,13 @@ export class PizzaToppingsService {
       , {
         name: "Olives"
         , price: 2.5
+      }, {
+          name: "Mushrooms"
+          , price: 3.15
       }
       , {
         name: "Mushrooms"
-        , price: 3.15
+        , price: 3.15 
       }
     ];
     return pizzaToppingsFromWebService.map(x => ({
