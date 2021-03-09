@@ -33,11 +33,13 @@ import { MdmSlideToggleComponent } from './mdm-slide-toggle/mdm-slide-toggle.com
 import { JtsRiggedD20Component } from './jts-rigged-d20/jts-rigged-d20.component';
 
 import { MatSliderModule } from '@angular/material/slider';
+import { JcwBestGuitarComponent } from './jcw-best-guitar/jcw-best-guitar.component';
 import { LalAdditionComponent } from './lal-addition/lal-addition.component';
 
 import { MatRadioModule } from '@angular/material/radio';
 import { MatRippleModule } from '@angular/material/core';
 
+import { JcmCatGeneratorComponent } from './jcm-cat-generator/jcm-cat-generator.component'; 
 
 @NgModule({
   declarations: [
@@ -52,13 +54,13 @@ import { MatRippleModule } from '@angular/material/core';
     TjsRollD6Component,
     TjsSquaredComponent,
     JhProgressBarComponent,
+    JcwBestGuitarComponent,
     MdmSlideToggleComponent,
     JhProgressBarComponent,
     JtsRiggedD20Component,
     BearPickerComponent,
-    LalAdditionComponent
-
-
+    LalAdditionComponent,
+    JcmCatGeneratorComponent
   ],
   
   schemas: [
