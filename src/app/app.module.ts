@@ -36,6 +36,7 @@ import { LalAdditionComponent } from './lal-addition/lal-addition.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatRippleModule } from '@angular/material/core';
 
+import { JcmCatGeneratorComponent } from './jcm-cat-generator/jcm-cat-generator.component'; 
 
 @NgModule({
   declarations: [
@@ -54,9 +55,8 @@ import { MatRippleModule } from '@angular/material/core';
     JhProgressBarComponent,
     JtsRiggedD20Component,
     BearPickerComponent,
-    LalAdditionComponent
-
-
+    LalAdditionComponent,
+    JcmCatGeneratorComponent
   ],
   imports: [
     BrowserModule,
