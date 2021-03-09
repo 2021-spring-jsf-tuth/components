@@ -10,6 +10,13 @@ export class BiaD8RollerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.rollD8();
+  }
+
+  value: number;
+
+  rollD8() {
+    this.value = Math.floor(Math.random() * 8) + 1;
   }
 
 }
