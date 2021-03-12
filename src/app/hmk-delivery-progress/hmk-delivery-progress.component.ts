@@ -6,7 +6,9 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
   styleUrls: ['./hmk-delivery-progress.component.css']
 })
 export class HmkDeliveryProgressComponent implements OnInit {
-  value: number;
+  
+  mode: 'determinate';
+  value = 50;
 
   constructor() { }
 

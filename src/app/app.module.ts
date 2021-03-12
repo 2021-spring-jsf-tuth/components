@@ -41,6 +41,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatRippleModule } from '@angular/material/core';
 import { JcmCatGeneratorComponent } from './jcm-cat-generator/jcm-cat-generator.component'; 
 import { HmkDeliveryProgressComponent } from './hmk-delivery-progress/hmk-delivery-progress.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -92,7 +93,8 @@ import { HmkDeliveryProgressComponent } from './hmk-delivery-progress/hmk-delive
     MatDatepickerModule,
     MatNativeDateModule,
     MatSliderModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
