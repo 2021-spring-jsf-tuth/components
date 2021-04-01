@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title>
+        Joe's KDA Calculator
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Kills</mat-label>
+            <input type="number" matInput [(ngModel)]=numberOne>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Assists</mat-label>
+            <input type="number" matInput [(ngModel)]=numberTwo>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Deaths</mat-label>
+            <input type="number" matInput [(ngModel)]=numberThree>
+        </mat-form-field>
+        <br>
+        <button (click)='calculateKda()'
+            mat-raised-button
+            color="primary">=</button>
+        <h4>
+            KDA = {{ newKda }}
+        </h4>
+
+    </mat-card-content>
+</mat-card>
