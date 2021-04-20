@@ -1,23 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
-import { CvChipsComponent } from './cv-chips/cv-chips.component'; 
+import { CvChipsComponent } from './cv-chips/cv-chips.component';
 import { ReservationDateComponent } from './reservation-date/reservation-date.component';
 import { JhProgressBarComponent } from './jh-progress-bar/jh-progress-bar.component';
 import { BearPickerComponent } from './bear-picker/bear-picker.component';
-
+import { DoingMathComponent } from './doing-math/doing-math.component';
 
 
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatCardModule } from '@angular/material/card'; 
-import { MatButtonModule } from '@angular/material/button'; 
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { LecTodoListComponent } from './lec-todo-list/lec-todo-list.component';
-import { MatChipsModule } from '@angular/material/chips'; 
+import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import { TjsD20RollerComponent } from './tjs-d20-roller/tjs-d20-roller.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -39,7 +38,7 @@ import { LalAdditionComponent } from './lal-addition/lal-addition.component';
 
 import { MatRadioModule } from '@angular/material/radio';
 import { MatRippleModule } from '@angular/material/core';
-import { JcmCatGeneratorComponent } from './jcm-cat-generator/jcm-cat-generator.component'; 
+import { JcmCatGeneratorComponent } from './jcm-cat-generator/jcm-cat-generator.component';
 import { HmkDeliveryProgressComponent } from './hmk-delivery-progress/hmk-delivery-progress.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
@@ -64,18 +63,19 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     BearPickerComponent,
     LalAdditionComponent,
     JcmCatGeneratorComponent,
-    HmkDeliveryProgressComponent
+    HmkDeliveryProgressComponent,
+    DoingMathComponent
   ],
-  
+
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
-  ], 
+  ],
 
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatCardModule, 
+    MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
     MatChipsModule,
